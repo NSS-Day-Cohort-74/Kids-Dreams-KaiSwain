@@ -51,7 +51,7 @@ Before you click the "Complete Assessment" button on the Learning Platform, add 
 
    > 1. In each dom element we have stored each celebrity's sport as state with the data attribute of sport.
    2. We store each dom element we click on in a variable so that we can access its state later.
-   3. We use string interpolation in our window alert and insert the what the sport data attribute is equal to. Which would be that celebrity's sport.
+   3. We use string interpolation in our window alert and insert the what the sport data attribute is equal to, of what we have clicked on. Which would be that celebrity's sport.
 
 4. Can you describe, in detail, the algorithm that is in the `main` module?
 
