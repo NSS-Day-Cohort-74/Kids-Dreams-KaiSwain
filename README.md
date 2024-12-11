@@ -36,7 +36,12 @@ Before you click the "Complete Assessment" button on the Learning Platform, add 
 
 1. When a child is clicked on in the browser, which module contains the code that will execute on that event happening? Can you explain the algorithm of that logic?
 
-   > Kids.js is responsible for displaying each kids name. It would make sense that if you want to make those names do something when you click it, we would add it to the same module. But you could make a new module for all your click events if you wanted.
+   > 1. Kids.js is responsible for displaying each kids name. 
+   2. We invoke an event listener function with an argument of "click" so that it listens for a click. 
+   3. When we click on something, the next argument is ran which is a function. 
+   4. The function will store what we clicked on which is a dom element in a variable so we can access its properties later.
+   5. Then we check to see if what we click on has a data attribute of type equal to "child". To make sure that only when we click on a child a window alert will pop up.
+   6. When we click on a dom element with a data attribute of type equal to "child", a window alert will pop up using the dom elements inner HTML and the dom elements value of the data attribute of wish.
 
 2. In the **Pairings** module, why must the `findCelebrityMatch()` function be invoked inside the `for..of` loop that iterates the kids array?
 
@@ -44,7 +49,9 @@ Before you click the "Complete Assessment" button on the Learning Platform, add 
 
 3. In the **CelebrityList** module, can you describe how the name of the sport that the celebrity plays can be displayed in the window alert text?
 
-   > We listen for a click. If We click then we store what we clicked on in a variable. If what we clicked on has a type of celebrity, then the name of the sport will pop up because we have access to it through what we have stored in the HTML's state.
+   > 1. In each dom element we have stored each celebrity's sport as state with the data attribute of sport.
+   2. We store each dom element we click on in a variable so that we can access its state later.
+   3. We use string interpolation in our window alert and insert the what the sport data attribute is equal to. Which would be that celebrity's sport.
 
 4. Can you describe, in detail, the algorithm that is in the `main` module?
 
